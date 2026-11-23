@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="he"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;font-family:'Heebo',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'secondary': '#6E6754', 'inverse-primary': '#dfc29f', 'primary-fixed': '#fcdeba', 'error-container': '#ffdad6', 'surface-bright': '#fcf9f1', 'on-surface': '#1c1c17', 'surface-dim': '#dcdad2', 'inverse-on-surface': '#f3f1e9', 'secondary-container': '#eee1cc', 'surface-container-high': '#ebe8e0', 'outline': '#7f756b', 'on-background': '#1c1c17', 'background': '#F6F3EB', 'outline-variant': '#d1c4b9', 'on-tertiary-fixed': '#271902', 'surface-tint': '#715b3e', 'surface-container-lowest': '#ffffff', 'surface': '#F6F3EB', 'on-primary-fixed': '#281903', 'tertiary-container': '#8b7352', 'on-secondary-container': '#6c6353', 'on-primary-fixed-variant': '#574329', 'tertiary': '#705b3b', 'surface-container': '#f1eee6', 'on-secondary-fixed-variant': '#4e4637', 'tertiary-fixed-dim': '#dfc29c', 'inverse-surface': '#31312b', 'on-error-container': '#93000a', 'primary-fixed-dim': '#dfc29f', 'on-error': '#ffffff', 'on-tertiary-fixed-variant': '#574326', 'on-secondary': '#ffffff', 'surface-variant': '#e5e2da', 'primary': '#8B7355', 'on-surface-variant': '#4d453c', 'on-primary-container': '#ffffff', 'on-secondary-fixed': '#211b0e', 'tertiary-fixed': '#fcdeb6', 'surface-container-low': '#f6f3eb', 'primary-container': '#8B7355', 'error': '#ba1a1a', 'on-tertiary-container': '#090400', 'secondary-fixed-dim': '#d1c5b1', 'on-primary': '#ffffff', 'secondary-fixed': '#eee1cc', 'on-tertiary': '#ffffff', 'surface-container-highest': '#e5e2da', 'khaki-tint': '#DCE3D3', 'camel-accent': '#9E825D' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'space-xl': '2rem', 'gutter': '1rem', 'space-sm': '0.5rem', 'margin': '1rem', 'space-xs': '0.25rem', 'space-md': '1rem', 'space-lg': '1.5rem' }, fontFamily: { 'headline-sm': ['Heebo'], 'label-md': ['Heebo'], 'body-lg': ['Heebo'], 'display-lg': ['Heebo'], 'body-sm': ['Heebo'], 'label-lg': ['Heebo'], 'label-sm': ['Heebo'], 'headline-lg': ['Heebo'], 'body-md': ['Heebo'], 'headline-md': ['Heebo'] }, fontSize: { 'headline-sm': ['18px', { lineHeight: '24px', fontWeight: '600' }], 'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.02em', fontWeight: '600' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '500' }], 'display-lg': ['32px', { lineHeight: '40px', letterSpacing: '-0.02em', fontWeight: '800' }], 'body-sm': ['13px', { lineHeight: '18px', fontWeight: '400' }], 'label-lg': ['14px', { lineHeight: '20px', fontWeight: '600' }], 'label-sm': ['11px', { lineHeight: '14px', fontWeight: '500' }], 'headline-lg': ['26px', { lineHeight: '34px', letterSpacing: '-0.01em', fontWeight: '700' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'headline-md': ['22px', { lineHeight: '28px', fontWeight: '700' }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-[#F6F3EB]/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(50,46,35,0.06)] pt-safe border-b border-[#E2DACB]/60"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="MyTroop Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XzrKeVjA8owd76qhiBHQLNprxOFtrfUWJshcD06Kcl7zM5nvq5ev7-3Z726UAWwq-UaRJRj-66iLeyYfLZhpsMYHlVhNfRgTkxcfgzb9z-IW5R5cZjeYZee6ziuPlI1dTkeo0YuJOHeznaZ2vs4njBfkVLqdQhNhMvwOBdxxzEAhWCGYBRa2-CqqqWuK9B9vL0KprjU2pmV4v8hILvkWeXHPqHrYt8D4u-8AcCk1MFNK1SSnlnTu6U-ic"/><span class="font-headline-sm text-headline-sm text-on-surface font-bold">MyTroop</span><span class="hidden">Ideas Bank</span></div><div class="flex items-center gap-space-xs"><button aria-label="התראות" class="w-11 h-11 flex items-center justify-center rounded-full text-secondary hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span></button><a class="w-11 h-11 flex items-center justify-center rounded-full" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-[#8B7355]/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOocxAeW088iNI7lMsO5LU3rhluu_Gs0z6k35ya3IAux6C7HwjZl7ovwWEkyG--uodsO3OWoyMm7fTsL0a9R0iiTPjE0RMhFiQtpIdvNEh8QegZh1oYvftMCwk5VGrVUvp9Qjq1woKWRXGj43P_2O7xmsLcThaftjJ1FZyLOpkUnRpqqYpVnPEX859CJGnXgUeTGvvnoHgcwFMtGxz3ILclBRgkCqjoKuhVqQgdTlAmIyEVqAfk_Jm"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full px-gutter pt-16 pb-28 bg-[#F6F3EB]"><div class="flex flex-col w-full pb-8">
+<!-- Header & Greeting Intro -->
+<section class="flex flex-col gap-space-xs mb-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">רעיונות לפעולות 💡</h1>
+<p class="font-body-md text-body-md text-secondary">מחפשים רעיון לפעולה הבאה? הגעתם למקום הנכון!</p>
+</div>
+<div class="w-12 h-12 rounded-full bg-[#DCE3D3] flex items-center justify-center text-[#8B7355] shadow-sm">
+<span class="material-symbols-outlined text-[28px]">auto_stories</span>
+</div>
+</div>
+</section>
+<!-- Search Input Container -->
+<section class="mb-4 sm:mb-4.5">
+<div class="relative w-full">
+<div class="absolute inset-y-0 right-0 pr-space-md flex items-center pointer-events-none text-secondary">
+<span class="material-symbols-outlined text-[22px]">search</span>
+</div>
+<input class="w-full h-12 pr-11 pl-12 bg-surface-container-lowest text-on-surface placeholder:text-secondary/70 rounded-xl shadow-sm border border-[#E2DACB] text-body-md font-body-md focus:outline-none focus:ring-1 focus:ring-[#8B7355] focus:bg-white transition-all" placeholder="חיפוש לפי משחק, נושא, ערך או שכבת גיל..." type="search"/>
+<button aria-label="מסננים מתקדמים" class="absolute inset-y-0 left-0 pl-space-md flex items-center text-secondary hover:text-[#8B7355] transition-colors">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</section>
+<!-- Horizontal Scrollable Category Chips -->
+<section class="mb-4.5 sm:mb-5 -mx-gutter px-gutter overflow-x-auto scrollbar-none flex items-center gap-2 pb-1.5 pt-0.5">
+<button class="flex-shrink-0 px-4 py-2 rounded-full bg-[#8B7355] text-white font-label-lg text-label-lg shadow-sm transition-transform active:scale-95">
+      הכל (120+)
+    </button>
+<button class="flex-shrink-0 px-4 py-2 rounded-full bg-surface-container-lowest text-secondary border border-[#E2DACB] font-label-lg text-label-lg shadow-sm hover:bg-[#DCE3D3]/50 transition-transform active:scale-95 flex items-center gap-1">
+<span>פעולות גיבוש</span>
+<span>🤝</span>
+</button>
+<button class="flex-shrink-0 px-4 py-2 rounded-full bg-surface-container-lowest text-secondary border border-[#E2DACB] font-label-lg text-label-lg shadow-sm hover:bg-[#DCE3D3]/50 transition-transform active:scale-95 flex items-center gap-1">
+<span>פעולות ערכיות</span>
+<span>⚖️</span>
+</button>
+<button class="flex-shrink-0 px-4 py-2 rounded-full bg-surface-container-lowest text-secondary border border-[#E2DACB] font-label-lg text-label-lg shadow-sm hover:bg-[#DCE3D3]/50 transition-transform active:scale-95 flex items-center gap-1">
+<span>משחקי חברה ו-O.D.T</span>
+<span>🏃</span>
+</button>
+<button class="flex-shrink-0 px-4 py-2 rounded-full bg-surface-container-lowest text-secondary border border-[#E2DACB] font-label-lg text-label-lg shadow-sm hover:bg-[#DCE3D3]/50 transition-transform active:scale-95 flex items-center gap-1">
+<span>פעולות שטח ומחנאות</span>
+<span>⛺️</span>
+</button>
+<button class="flex-shrink-0 px-4 py-2 rounded-full bg-surface-container-lowest text-secondary border border-[#E2DACB] font-label-lg text-label-lg shadow-sm hover:bg-[#DCE3D3]/50 transition-transform active:scale-95 flex items-center gap-1">
+<span>פעולות יצירה</span>
+<span>🎨</span>
+</button>
+<button class="flex-shrink-0 px-4 py-2 rounded-full bg-surface-container-lowest text-secondary border border-[#E2DACB] font-label-lg text-label-lg shadow-sm hover:bg-[#DCE3D3]/50 transition-transform active:scale-95 flex items-center gap-1">
+<span>מנהיגות ואחריות</span>
+<span>🧭</span>
+</button>
+</section>
+<!-- Activity Cards Feed - ריווח מעודן ומאוזן מעל הכרטיס הראשון -->
+<section class="flex flex-col gap-4.5 sm:gap-5 mt-1 sm:mt-1.5 mb-14">
+<!-- Activity Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl shadow-[0_4px_16px_rgba(77,69,60,0.08)] border border-[#E2DACB]/70 overflow-hidden flex flex-col transition-all">
+<!-- Visual Card Banner -->
+<div class="relative h-44 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A sun-dappled Israeli pine forest camp clearing with wooden scout pioneering towers, rope ties, compass and vintage map spread on a wooden table, warm golden hour natural light, earthy sage green and soft khaki tones, adventurous youth movement atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjJV7Ks1lBxZsVrildtQmND3MWx97C2xPK5Wb4GnRtdBjv-6-yQZ7wa8fmKYAofAbZ4tWHu2EI3JIHNXk1iVeTwmnyu6MBXXWj2ZIAAOzhBly8np7tfJke5fqbUlcWC1qkOYSQ7oWLeZaS9plLGPGrriiwnifd5Y8P9WheQaJ-cp6h_d1k73te1frFWPeJQNhgNkqmmTf-1ts9gCBVerH7cNVCtmXx3haBaqpO0SbyFnqr6gMATXQT"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1c1c17]/85 via-transparent to-black/25 flex flex-col justify-between p-space-md">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest/95 backdrop-blur-md px-3 py-1 rounded-full text-[#8B7355] font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[16px]">forest</span>
+<span>מחנאות וסיירות</span>
+</span>
+<button aria-label="הסרה ממועדפים" class="w-9 h-9 rounded-full bg-surface-container-lowest/95 backdrop-blur-md flex items-center justify-center text-error shadow-sm transition-transform active:scale-90" id="fav-btn-1" onclick="toggleFavorite(this)">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="text-surface-container-lowest">
+<div class="flex items-center gap-1.5 text-[#fcdeb6] font-label-sm text-label-sm mb-1">
+<span class="material-symbols-outlined text-[14px]">star</span>
+<span>מומלץ החודש בשבט • 98% משוב חיובי</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-surface-container-lowest font-bold">חפש את המטמון הצופי: פענוח צפנים ומורס 🧭</h2>
+</div>
+</div>
+</div>
+<!-- Card Content -->
+<div class="p-space-md flex flex-col gap-space-sm">
+<!-- Badges Row -->
+<div class="flex flex-wrap items-center gap-2">
+<span class="inline-flex items-center gap-1 bg-[#DCE3D3] text-[#383428] px-2.5 py-1 rounded-full font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">school</span>
+<span>ד׳-ו׳ • ח׳ ומעלה</span>
+</span>
+<span class="inline-flex items-center gap-1 bg-[#F5F1E6] text-[#383428] px-2.5 py-1 rounded-full font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>60 דקות</span>
+</span>
+<span class="inline-flex items-center gap-1 bg-[#eee1cc] text-[#6E6754] font-label-sm text-label-sm px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">groups</span>
+<span>15-30 חניכים</span>
+</span>
+</div>
+<!-- Description -->
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+          פעולת שטח אינטראקטיבית הכוללת פתרון כתבי סתרים, קשירות סנאדה צופית ומציאת תחנות ניווט ברחבי היער/השבט.
+        </p>
+<!-- Divider & Footer -->
+<div class="pt-space-xs flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-1.5 space-x-reverse">
+<span class="w-6 h-6 rounded-full bg-[#8B7355] text-white text-[10px] flex items-center justify-center font-bold">נ</span>
+<span class="w-6 h-6 rounded-full bg-[#9E825D] text-white text-[10px] flex items-center justify-center font-bold">י</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">נוצר ע״י נועם י.</span>
+</div>
+<button class="h-10 px-4 rounded-xl bg-[#8B7355] text-white font-label-lg text-label-lg flex items-center justify-center gap-1.5 shadow-sm hover:bg-[#7A6548] active:scale-95 transition-all" onclick="openActivityModal()">
+<span>צפייה במערך המלא</span>
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Activity Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl shadow-[0_4px_16px_rgba(77,69,60,0.08)] border border-[#E2DACB]/70 p-space-md flex flex-col gap-space-sm transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-[#fcdeb6] text-[#271902] flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[26px]">sports_esports</span>
+</div>
+<div>
+<span class="inline-flex items-center gap-1 bg-[#DCE3D3] text-[#383428] font-label-sm text-label-sm px-2.5 py-0.5 rounded-full mb-1">
+              פעולת פנים / חוץ
+            </span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">
+              משחק הלוח האנושי - גיבוש ושיתוף פעולה 🎲
+            </h2>
+</div>
+</div>
+<button aria-label="הוספה למועדפים" class="w-9 h-9 rounded-full bg-[#DCE3D3]/60 text-secondary hover:text-error flex items-center justify-center shrink-0 transition-transform active:scale-90" onclick="toggleFavorite(this)">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<!-- Badges Row -->
+<div class="flex flex-wrap items-center gap-2">
+<span class="inline-flex items-center gap-1 bg-[#DCE3D3] text-[#383428] px-2.5 py-1 rounded-full font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">diversity_3</span>
+<span>גיבוש וכיף</span>
+</span>
+<span class="inline-flex items-center gap-1 bg-[#F5F1E6] text-[#383428] px-2.5 py-1 rounded-full font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+<span>45 דק׳</span>
+</span>
+<span class="inline-flex items-center gap-1 bg-[#eee1cc] text-[#6E6754] font-label-sm text-label-sm px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+<span>כל שכבות הגיל</span>
+</span>
+</div>
+<!-- Description -->
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+        מסלול ענק שבו החניכים הם כלי המשחק, וכל משבצת דורשת משימה קבוצתית משותפת ומצחיקה. מתאים במיוחד לפתיחת שנה ואיחוד קבוצה.
+      </p>
+<!-- Card Footer -->
+<div class="pt-space-xs flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-[#9E825D]">thumb_up</span>
+<span>42 מדריכים שמרו השבוע</span>
+</div>
+<button class="h-10 px-4 rounded-xl bg-[#8B7355] text-white font-label-lg text-label-lg flex items-center justify-center gap-1.5 shadow-sm hover:bg-[#7A6548] active:scale-95 transition-all" onclick="openActivityModal()">
+<span>צפייה במערך</span>
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+</div>
+</article>
+<!-- Activity Card 3 -->
+<article class="bg-surface-container-lowest rounded-xl shadow-[0_4px_16px_rgba(77,69,60,0.08)] border border-[#E2DACB]/70 p-space-md flex flex-col gap-space-sm transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-[#DCE3D3] text-[#715b3e] flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[26px]">balance</span>
+</div>
+<div>
+<span class="inline-flex items-center gap-1 bg-[#eee1cc] text-[#6c6353] font-label-sm text-label-sm px-2.5 py-0.5 rounded-full mb-1">
+              מעגל שיח ודילמה
+            </span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">
+              דילמת המצפן המוסרי: פעולת ערכים וקבלת החלטות ⚖️
+            </h2>
+</div>
+</div>
+<button aria-label="הוספה למועדפים" class="w-9 h-9 rounded-full bg-[#DCE3D3]/60 text-secondary hover:text-error flex items-center justify-center shrink-0 transition-transform active:scale-90" onclick="toggleFavorite(this)">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<!-- Badges Row -->
+<div class="flex flex-wrap items-center gap-2">
+<span class="inline-flex items-center gap-1 bg-[#DCE3D3] text-[#383428] px-2.5 py-1 rounded-full font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+<span>ערכית • ח׳-ט׳</span>
+</span>
+<span class="inline-flex items-center gap-1 bg-[#F5F1E6] text-[#383428] px-2.5 py-1 rounded-full font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+<span>50 דק׳</span>
+</span>
+<span class="inline-flex items-center gap-1 bg-[#eee1cc] text-[#6E6754] font-label-sm text-label-sm px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">record_voice_over</span>
+<span>דיון ומעגל שיח</span>
+</span>
+</div>
+<!-- Description -->
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+        משחק תפקידים סוחף המדמה הישרדות באי בודד וקבלת החלטות קהילתיות דמוקרטיות. מעורר חשיבה ביקורתית והקשבה הדדית.
+      </p>
+<!-- Card Footer -->
+<div class="pt-space-xs flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-[#8B7355]">verified</span>
+<span>מאושר ע״י הנהגת השבט</span>
+</div>
+<button class="h-10 px-4 rounded-xl bg-[#8B7355] text-white font-label-lg text-label-lg flex items-center justify-center gap-1.5 shadow-sm hover:bg-[#7A6548] active:scale-95 transition-all" onclick="openActivityModal()">
+<span>צפייה במערך</span>
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+</div>
+</article>
+</section>
+<!-- Interactive Slide-up Drawer Preview Modal (embedded showcase) -->
+<div class="fixed inset-0 z-50 bg-[#1c1c17]/50 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 flex items-end justify-center" id="activity-drawer-overlay" onclick="closeActivityModal(event)">
+<div class="w-full max-w-lg bg-surface-container-lowest rounded-t-3xl shadow-[0_-8px_30px_rgba(49,49,43,0.2)] max-h-[751px] overflow-y-auto transform translate-y-full transition-transform duration-300 p-space-lg flex flex-col gap-space-md" id="activity-drawer" onclick="event.stopPropagation()">
+<!-- Drag Handle Pill -->
+<div class="w-12 h-1.5 bg-[#d1c4b9]/80 rounded-full mx-auto -mt-2 mb-1"></div>
+<!-- Drawer Header -->
+<div class="flex items-start justify-between gap-space-md">
+<div>
+<span class="inline-block bg-[#eee1cc] text-[#574329] font-label-sm text-label-sm px-3 py-0.5 rounded-full mb-1.5">
+            מערך פעולה מוכן
+          </span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+            חפש את המטמון הצופי: פענוח צפנים ומורס 🧭
+          </h3>
+</div>
+<button aria-label="סגירה" class="w-10 h-10 rounded-full bg-[#f1eee6] flex items-center justify-center text-secondary hover:text-on-surface transition-colors" onclick="closeActivityModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Quick Metrics Grid -->
+<div class="grid grid-cols-3 gap-2 bg-[#F6F3EB] p-3 rounded-xl border border-[#E2DACB]">
+<div class="flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-[#8B7355] text-[20px]">timer</span>
+<span class="font-label-sm text-label-sm text-secondary mt-0.5">זמן מומלץ</span>
+<span class="font-label-lg text-label-lg text-on-surface">60 דקות</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-[#8B7355] text-[20px]">group</span>
+<span class="font-label-sm text-label-sm text-secondary mt-0.5">גודל קבוצה</span>
+<span class="font-label-lg text-label-lg text-on-surface">15-30</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-[#8B7355] text-[20px]">terrain</span>
+<span class="font-label-sm text-label-sm text-secondary mt-0.5">מיקום</span>
+<span class="font-label-lg text-label-lg text-on-surface">חורשה/שבט</span>
+</div>
+</div>
+<!-- Activity Stages Summary -->
+<div class="flex flex-col gap-2.5">
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[#8B7355] text-[18px]">format_list_numbered</span>
+<span>שלבי הפעולה:</span>
+</h4>
+<div class="space-y-2">
+<div class="flex items-start gap-3 p-2.5 bg-[#f1eee6] rounded-lg">
+<span class="w-6 h-6 rounded-full bg-[#8B7355] text-white text-[12px] font-bold flex items-center justify-center shrink-0 mt-0.5">1</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">פתיחה וסיפור מסגרת (10 דק׳)</p>
+<p class="font-body-sm text-body-sm text-secondary">מכתב מוצפן מגנרל הצופים האבוד שנמצא בתוך בקבוק עתיק.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-2.5 bg-[#f1eee6] rounded-lg">
+<span class="w-6 h-6 rounded-full bg-[#8B7355] text-white text-[12px] font-bold flex items-center justify-center shrink-0 mt-0.5">2</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">מסלול תחנות המשימה (35 דק׳)</p>
+<p class="font-body-sm text-body-sm text-secondary">4 תחנות: קשר הצלה, כתב אתב״ש, קוד מורס עם פנסים, ומשחק שיווי משקל צוותי.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-2.5 bg-[#f1eee6] rounded-lg">
+<span class="w-6 h-6 rounded-full bg-[#8B7355] text-white text-[12px] font-bold flex items-center justify-center shrink-0 mt-0.5">3</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">פיצוח תיבת האוצר ומסדר סיכום (15 דק׳)</p>
+<p class="font-body-sm text-body-sm text-secondary">חיבור כל הרמזים לקוד מנעול 4 ספרות ומציאת תעודות סייר מוסמך.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Buttons in Modal -->
+<div class="flex flex-col gap-2 pt-2">
+<button class="w-full h-12 rounded-xl bg-[#8B7355] text-white font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm hover:bg-[#7A6548] active:scale-98 transition-all" onclick="addedToMyActivities(this)">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>הוספה לפעולות שלי</span>
+</button>
+<button class="w-full h-11 rounded-xl bg-[#ebe8e0] text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-[#e5e2da] transition-colors" onclick="downloadPdfFeedback(this)">
+<span class="material-symbols-outlined text-[20px] text-secondary">picture_as_pdf</span>
+<span>הורדת קובץ מערך ב-PDF</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Micro-interaction / Toast Alert container -->
+<div class="fixed bottom-20 inset-x-4 z-50 transform translate-y-24 opacity-0 pointer-events-none transition-all duration-300 flex justify-center" id="toast-message">
+<div class="bg-[#31312b] text-[#f3f1e9] px-4 py-3 rounded-xl shadow-lg flex items-center gap-2 text-body-md font-body-md">
+<span class="material-symbols-outlined text-[#fcdeba] text-[20px]">check_circle</span>
+<span id="toast-text">הפעולה נוספה בהצלחה ללוח הפעולות שלך!</span>
+</div>
+</div>
+</div>
+<script>
+  function openActivityModal() {
+    const overlay = document.getElementById('activity-drawer-overlay');
+    const drawer = document.getElementById('activity-drawer');
+    if (!overlay || !drawer) return;
+    
+    overlay.classList.remove('opacity-0', 'pointer-events-none');
+    overlay.classList.add('opacity-100');
+    drawer.classList.remove('translate-y-full');
+    drawer.classList.add('translate-y-0');
+  }
+
+  function closeActivityModal(event) {
+    if (event && event.target && event.target.id !== 'activity-drawer-overlay' && !event.target.closest('button')) {
+      return;
+    }
+    const overlay = document.getElementById('activity-drawer-overlay');
+    const drawer = document.getElementById('activity-drawer');
+    if (!overlay || !drawer) return;
+
+    drawer.classList.add('translate-y-full');
+    drawer.classList.remove('translate-y-0');
+    overlay.classList.add('opacity-0', 'pointer-events-none');
+    overlay.classList.remove('opacity-100');
+  }
+
+  function toggleFavorite(button) {
+    const icon = button.querySelector('.material-symbols-outlined');
+    if (!icon) return;
+
+    const isFav = icon.textContent.includes('favorite') && !icon.textContent.includes('favorite_border');
+    if (isFav) {
+      icon.textContent = 'favorite_border';
+      button.classList.remove('text-error');
+      button.classList.add('text-secondary');
+      icon.style.fontVariationSettings = "'FILL' 0";
+      showToast('הפעולה הוסרה מהמועדפים');
+    } else {
+      icon.textContent = 'favorite';
+      button.classList.add('text-error');
+      button.classList.remove('text-secondary');
+      icon.style.fontVariationSettings = "'FILL' 1";
+      showToast('הפעולה נשמרה במועדפים! ❤️');
+    }
+  }
+
+  function addedToMyActivities(button) {
+    button.classList.remove('bg-[#8B7355]');
+    button.classList.add('bg-[#ebe8e0]', 'text-on-surface');
+    button.innerHTML = '<span class="material-symbols-outlined text-[20px] text-[#8B7355]">check</span><span>נוספה לפעולות שלי!</span>';
+    showToast('הפעולה שובצה ביומן הפעולות בהצלחה 🎉');
+    setTimeout(() => {
+      closeActivityModal();
+    }, 1200);
+  }
+
+  function downloadPdfFeedback(button) {
+    const originalText = button.innerHTML;
+    button.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span><span>מכין קובץ להורדה...</span>';
+    setTimeout(() => {
+      button.innerHTML = '<span class="material-symbols-outlined text-[20px] text-[#8B7355]">download_done</span><span>הקובץ הורד למכשיר</span>';
+      showToast('הקובץ הורד בהצלחה 📄');
+      setTimeout(() => {
+        button.innerHTML = originalText;
+      }, 2500);
+    }, 1000);
+  }
+
+  function showToast(text) {
+    const toast = document.getElementById('toast-message');
+    const toastLabel = document.getElementById('toast-text');
+    if (!toast || !toastLabel) return;
+
+    toastLabel.textContent = text;
+    toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 2800);
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(50,46,35,0.08)] border-t border-[#E2DACB]/60 rounded-t-xl" data-active-classes="text-[#8B7355] font-bold bg-[#DCE3D3]/50 rounded-xl"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-space-xs min-w-[64px] h-12 text-secondary hover:text-on-surface transition-all px-space-xs" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">בית</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[64px] h-12 text-secondary hover:text-on-surface transition-all px-space-xs" data-path="troop-members" href="#"><span class="material-symbols-outlined text-[24px]">group</span><span class="font-label-sm text-label-sm">חניכים</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[64px] h-12 text-secondary hover:text-on-surface transition-all px-space-xs" data-path="activities" href="#"><span class="material-symbols-outlined text-[24px]">event</span><span class="font-label-sm text-label-sm">פעולות</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs min-w-[64px] h-12 transition-all px-space-xs text-[#8B7355] font-bold bg-[#DCE3D3]/60 rounded-xl" data-path="ideas-bank" href="#"><span class="material-symbols-outlined text-[24px]">lightbulb</span><span class="font-label-sm text-label-sm">רעיונות</span></a></div></nav></body></html>
